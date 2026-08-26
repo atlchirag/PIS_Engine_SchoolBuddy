@@ -1,0 +1,334 @@
+C:\Users\user\Desktop\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe.config
+C:\Users\user\Desktop\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe
+C:\Users\user\Desktop\PIS_Engine\PISEngine\bin\Debug\PISEngine.pdb
+C:\Users\user\Desktop\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CopyComplete
+C:\Users\user\Desktop\PIS_Engine\PISEngine\obj\Debug\PISEngine.exe
+C:\Users\user\Desktop\PIS_Engine\PISEngine\obj\Debug\PISEngine.pdb
+D:\SVN_Commit\Server_Code_Current\services\yotta_PIS\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe.config
+D:\SVN_Commit\Server_Code_Current\services\yotta_PIS\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe
+D:\SVN_Commit\Server_Code_Current\services\yotta_PIS\PIS_Engine\PISEngine\bin\Debug\PISEngine.pdb
+D:\SVN_Commit\Server_Code_Current\services\yotta_PIS\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.AssemblyReference.cache
+D:\SVN_Commit\Server_Code_Current\services\yotta_PIS\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CoreCompileInputs.cache
+D:\SVN_Commit\Server_Code_Current\services\yotta_PIS\PIS_Engine\PISEngine\obj\Debug\PISEngine.exe
+D:\SVN_Commit\Server_Code_Current\services\yotta_PIS\PIS_Engine\PISEngine\obj\Debug\PISEngine.pdb
+D:\SVN_Commit\Server_Code_Current\services\yotta_PIS\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.Up2Date
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe.config
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\PISEngine.pdb
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Apis.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Newtonsoft.Json.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Buffers.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Memory.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.dll
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.pdb
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Apis.pdb
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Apis.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.pdb
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.pdb
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\Newtonsoft.Json.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Buffers.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Memory.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.xml
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.AssemblyReference.cache
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CoreCompileInputs.cache
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.Up2Date
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\obj\Debug\PISEngine.exe
+D:\Chirag\Chirag\yotta pis\PIS_Engine\PISEngine\obj\Debug\PISEngine.pdb
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe.config
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.pdb
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.dll
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.pdb
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.pdb
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.pdb
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.pdb
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.pdb
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.xml
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.AssemblyReference.cache
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CoreCompileInputs.cache
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.Up2Date
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.exe
+E:\Gaurav Sharma\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe.config
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.dll
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.xml
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.AssemblyReference.cache
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CoreCompileInputs.cache
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.Up2Date
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.exe
+E:\Gaurav Sharma\GauravSVN\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe.config
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.dll
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.pdb
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.xml
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.AssemblyReference.cache
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CoreCompileInputs.cache
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.Up2Date
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.exe
+E:\Gaurav Sharma\GauravSVN\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.pdb
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe.config
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.pdb
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.dll
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.pdb
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.pdb
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.pdb
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.xml
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.AssemblyReference.cache
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CoreCompileInputs.cache
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.Up2Date
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.exe
+C:\Users\Gaurav\Desktop\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.pdb
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe.config
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\PISEngine.pdb
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.dll
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.pdb
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.pdb
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.pdb
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.pdb
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.pdb
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Buffers.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Memory.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.xml
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.AssemblyReference.cache
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CoreCompileInputs.cache
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.Up2Date
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.exe
+E:\desktop_20may26\PIS_Service\PIS_For_Trackofy\PIS_Engine (1)\PIS_Engine\PISEngine\obj\Debug\PISEngine.pdb
+D:\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe.config
+D:\PIS_Engine\PISEngine\bin\Debug\PISEngine.exe
+D:\PIS_Engine\PISEngine\bin\Debug\PISEngine.pdb
+D:\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.dll
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.dll
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.dll
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.dll
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.dll
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Apis.dll
+D:\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\PIS_Engine\PISEngine\bin\Debug\System.Buffers.dll
+D:\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.dll
+D:\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.dll
+D:\PIS_Engine\PISEngine\bin\Debug\System.Memory.dll
+D:\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.dll
+D:\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.dll
+D:\PIS_Engine\PISEngine\bin\Debug\FirebaseAdmin.xml
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.pdb
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.xml
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Api.Gax.Rest.xml
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Apis.pdb
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Apis.xml
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.pdb
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Auth.xml
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.pdb
+D:\PIS_Engine\PISEngine\bin\Debug\Google.Apis.Core.xml
+D:\PIS_Engine\PISEngine\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PIS_Engine\PISEngine\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\PIS_Engine\PISEngine\bin\Debug\System.Buffers.xml
+D:\PIS_Engine\PISEngine\bin\Debug\System.CodeDom.xml
+D:\PIS_Engine\PISEngine\bin\Debug\System.Collections.Immutable.xml
+D:\PIS_Engine\PISEngine\bin\Debug\System.Memory.xml
+D:\PIS_Engine\PISEngine\bin\Debug\System.Numerics.Vectors.xml
+D:\PIS_Engine\PISEngine\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PIS_Engine\PISEngine\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PIS_Engine\PISEngine\bin\Debug\System.ValueTuple.xml
+D:\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.AssemblyReference.cache
+D:\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.CoreCompileInputs.cache
+D:\PIS_Engine\PISEngine\obj\Debug\PISEngine.csproj.Up2Date
+D:\PIS_Engine\PISEngine\obj\Debug\PISEngine.exe
+D:\PIS_Engine\PISEngine\obj\Debug\PISEngine.pdb

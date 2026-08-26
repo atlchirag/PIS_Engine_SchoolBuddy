@@ -1,0 +1,42 @@
+Processing stopId: 36173, Count: 2 -------------- 16:54:22
+
+Processing stopId: 36174, Count: 1 -------------- 16:56:38
+
+Processing stopId: 36176, Count: 4 -------------- 16:57:04
+
+Processing stopId: 36177, Count: 1 -------------- 16:57:32
+
+Processing stopId: 36175, Count: 1 -------------- 16:57:42
+
+Processing stopId: 36180, Count: 5 -------------- 16:58:25
+
+Processing stopId: 36178, Count: 1 -------------- 16:58:46
+
+Processing stopId: 36179, Count: 1 -------------- 16:58:51
+
+Processing stopId: 36181, Count: 1 -------------- 16:59:15
+
+Processing stopId: 36175, Count: 1 -------------- 17:23:15
+
+Processing stopId: 36178, Count: 1 -------------- 17:23:43
+
+Processing stopId: 36181, Count: 1 -------------- 17:24:01
+
+Processing stopId: 36175, Count: 1 -------------- 17:54:30
+
+Processing stopId: 36178, Count: 1 -------------- 17:54:44
+
+Processing stopId: 36181, Count: 1 -------------- 17:54:52
+
+Processing stopId: 36175, Count: 1 -------------- 18:15:17
+
+Processing stopId: 36178, Count: 1 -------------- 18:16:10
+
+Processing stopId: 36181, Count: 1 -------------- 18:16:18
+
+Processing stopId: 36175, Count: 1 -------------- 18:31:43
+
+Processing stopId: 36178, Count: 1 -------------- 18:31:57
+
+Processing stopId: 36181, Count: 1 -------------- 18:32:08
+

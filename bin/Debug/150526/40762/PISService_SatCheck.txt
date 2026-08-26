@@ -1,0 +1,36 @@
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 14:51:42
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 14:58:04
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 14:59:07
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 15:02:07
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 15:02:52
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 15:03:26
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 16:42:50
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 16:43:19
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 16:45:51
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 16:46:19
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 16:48:08
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 16:53:35
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 16:54:09
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 16:56:20
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 17:22:49
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 17:54:06
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 18:14:57
+
+Error while checking is_sat_off: Object cannot be cast from DBNull to other types. -------------- 18:31:22
+

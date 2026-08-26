@@ -1,0 +1,4 @@
+22-04-2025 10:59:04
+Incorrect syntax near the keyword 'where'.
+22-04-2025 10:59:15
+Incorrect syntax near the keyword 'where'.

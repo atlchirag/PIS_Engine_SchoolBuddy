@@ -1,0 +1,20 @@
+LatLng missing or invalid for stopId: 23524 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:11:59
+
+LatLng missing or invalid for stopId: 23525 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:12:57
+
+LatLng missing or invalid for stopId: 23524 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:12:58
+
+LatLng missing or invalid for stopId: 23526 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:13:03
+
+LatLng missing or invalid for stopId: 23525 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:13:03
+
+LatLng missing or invalid for stopId: 23526 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:13:12
+
+LatLng missing or invalid for stopId: 23527 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:13:20
+
+LatLng missing or invalid for stopId: 24068 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:13:20
+
+LatLng missing or invalid for stopId: 23527 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:13:20
+
+LatLng missing or invalid for stopId: 24068 — Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type. -------------- 11:13:20
+

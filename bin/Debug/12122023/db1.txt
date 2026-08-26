@@ -1,0 +1,2 @@
+12/12/2023 10:36:46 AM
+Invalid object name 'telemetry_dec22'.

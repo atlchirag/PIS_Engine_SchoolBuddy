@@ -1,0 +1,60 @@
+Processing stopId: 23524, Count: 4 -------------- 11:09:39
+
+Processing stopId: 23525, Count: 3 -------------- 11:12:14
+
+Processing stopId: 23524, Count: 4 -------------- 11:12:53
+
+Processing stopId: 23526, Count: 4 -------------- 11:12:58
+
+Processing stopId: 23525, Count: 3 -------------- 11:12:59
+
+Processing stopId: 23527, Count: 9 -------------- 11:13:05
+
+Processing stopId: 23526, Count: 4 -------------- 11:13:05
+
+Processing stopId: 23527, Count: 9 -------------- 11:13:20
+
+Processing stopId: 24068, Count: 1 -------------- 11:13:20
+
+Processing stopId: 24068, Count: 1 -------------- 11:13:20
+
+Processing stopId: 23524, Count: 4 -------------- 11:27:16
+
+Processing stopId: 23525, Count: 3 -------------- 11:30:07
+
+Processing stopId: 23524, Count: 4 -------------- 11:31:15
+
+Processing stopId: 23526, Count: 4 -------------- 11:31:36
+
+Processing stopId: 23527, Count: 9 -------------- 11:31:37
+
+Processing stopId: 23525, Count: 3 -------------- 11:31:37
+
+Processing stopId: 23526, Count: 4 -------------- 11:31:37
+
+Processing stopId: 24068, Count: 1 -------------- 11:31:37
+
+Processing stopId: 23527, Count: 9 -------------- 11:31:37
+
+Processing stopId: 24068, Count: 1 -------------- 11:31:37
+
+Processing stopId: 23524, Count: 4 -------------- 11:47:53
+
+Processing stopId: 23525, Count: 3 -------------- 11:47:53
+
+Processing stopId: 23526, Count: 4 -------------- 11:47:53
+
+Processing stopId: 23527, Count: 9 -------------- 11:47:53
+
+Processing stopId: 24068, Count: 1 -------------- 11:47:53
+
+Processing stopId: 23524, Count: 4 -------------- 11:58:40
+
+Processing stopId: 23525, Count: 3 -------------- 11:58:40
+
+Processing stopId: 23526, Count: 4 -------------- 11:58:40
+
+Processing stopId: 23527, Count: 9 -------------- 11:58:40
+
+Processing stopId: 24068, Count: 1 -------------- 11:58:40
+

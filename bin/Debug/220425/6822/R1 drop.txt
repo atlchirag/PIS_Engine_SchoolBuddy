@@ -1,0 +1,54 @@
+Route Started -------------- 11:01:44
+
+Route Started -------------- 11:07:47
+
+Route Started -------------- 11:12:08
+
+Total Stops are 0 -------------- 11:13:20
+
+Total vias are 0 -------------- 11:13:20
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 11:13:20
+
+Total Stops are 0 -------------- 11:13:20
+
+Total vias are 0 -------------- 11:13:20
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 11:13:20
+
+Route Started -------------- 11:26:16
+
+Route Started -------------- 11:30:07
+
+Total Stops are 5 -------------- 11:31:37
+
+Total vias are 0 -------------- 11:31:37
+
+Total Stops are 5 -------------- 11:31:37
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 11:31:37
+
+Bus Monitoring Started -------------- 11:31:37
+
+Total vias are 0 -------------- 11:31:37
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 11:31:37
+
+Bus Monitoring Started -------------- 11:31:37
+
+Route Started -------------- 11:47:53
+
+Total Stops are 5 -------------- 11:47:53
+
+Total vias are 0 -------------- 11:47:53
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 11:47:53
+
+Route Started -------------- 11:58:40
+
+Total Stops are 5 -------------- 11:58:40
+
+Total vias are 0 -------------- 11:58:40
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 11:58:40
+

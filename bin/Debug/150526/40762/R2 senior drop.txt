@@ -1,0 +1,78 @@
+Route Started -------------- 16:48:30
+
+Route Started -------------- 16:57:12
+
+Total Stops are 3 -------------- 16:59:27
+
+Route Started -------------- 17:23:03
+
+Total Stops are 3 -------------- 17:24:27
+
+No route vias found. Running DIRECT GPS-to-stop ETA fallback flow. -------------- 17:24:47
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 17:25:11
+
+Bus Monitoring Started -------------- 17:25:51
+
+Route Started -------------- 17:54:19
+
+Total Stops are 3 -------------- 17:55:01
+
+No route vias found. Running DIRECT GPS-to-stop ETA fallback flow. -------------- 17:55:10
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 17:55:28
+
+Bus Monitoring Started -------------- 17:55:56
+
+Route Started -------------- 18:15:09
+
+Total Stops are 3 -------------- 18:16:25
+
+No route vias found. Running DIRECT GPS-to-stop ETA fallback flow. -------------- 18:16:30
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 18:16:54
+
+Bus Monitoring Started -------------- 18:17:40
+
+StartEngine waiting: GPS stale. GPS IST=2026-05-15 18:13:24, Delay=5 minutes -------------- 18:18:37
+
+StartEngine waiting: GPS stale. GPS IST=2026-05-15 18:13:24, Delay=6 minutes -------------- 18:19:06
+
+StartEngine waiting: GPS stale. GPS IST=2026-05-15 18:13:24, Delay=6 minutes -------------- 18:19:30
+
+StartEngine waiting: GPS stale. GPS IST=2026-05-15 18:13:24, Delay=6 minutes -------------- 18:19:42
+
+StartEngine waiting: GPS stale. GPS IST=2026-05-15 18:13:24, Delay=6 minutes -------------- 18:19:47
+
+StartEngine waiting: GPS stale. GPS IST=2026-05-15 18:13:24, Delay=6 minutes -------------- 18:19:52
+
+StartEngine waiting: GPS stale. GPS IST=2026-05-15 18:13:24, Delay=7 minutes -------------- 18:19:56
+
+StartEngine waiting: GPS stale. GPS IST=2026-05-15 18:13:24, Delay=7 minutes -------------- 18:20:00
+
+StartEngine waiting: GPS stale. GPS IST=2026-05-15 18:13:24, Delay=7 minutes -------------- 18:20:06
+
+StartEngine Check => BusLoc=28.28472,77.07839, SchoolLoc=28.3890199,77.0696112, Distance=11,639.44, Ignition=1 -------------- 18:30:41
+
+Dis is 11639.44. Engine Started condition passed. -------------- 18:30:41
+
+Engine Started -------------- 18:30:41
+
+Route Started -------------- 18:31:35
+
+Total Stops are 3 -------------- 18:32:16
+
+No route vias found. Running DIRECT GPS-to-stop ETA fallback flow. -------------- 18:32:21
+
+message Api is  http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T -------------- 18:32:28
+
+Bus Monitoring Started -------------- 18:33:43
+
+Message sent to stop Central Park Aqua Front Towers, Sohna Rural, Haryana using DIRECT fallback flow. -------------- 18:33:44
+
+StartEngine Check => BusLoc=28.28472,77.07839, SchoolLoc=28.3890199,77.0696112, Distance=11,639.44, Ignition=1 -------------- 18:34:11
+
+Dis is 11639.44. Engine Started condition passed. -------------- 18:34:12
+
+Engine Started -------------- 18:34:13
+

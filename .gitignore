@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Firebase Admin SDK credentials
+schoolbuddy-4fc6d-firebase-adminsdk-xh2kk-f674f1807a.json
+schoolbuddy-4fc6d-firebase-adminsdk-xh2kk-5fac47bd25.json
+trackofy-27d73-firebase-adminsdk-ps5r8-9e89127a81.json
+
+# Keep bin/ and obj/ tracked
+# Do NOT add bin/ or obj/ here
