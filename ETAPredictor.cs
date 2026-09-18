@@ -16,23 +16,28 @@ namespace PIS_Engine
 {
     class ETAPredictor
     {
-        //private string API_KEY = "AIzaSyAPEMdDzjc_qpAFeP0BRPWOYuXYfvb3EE8";
         private int _RouteId;
         //private int _TripId = 0;
         private int _serviceId;
         private int _UserID = 0;
-       // string cs1 = "Data Source=45.113.189.23;Initial Catalog=newtrack;User ID=newtrack;Password=55hD&44m7E3jnd;Max Pool Size=32767;";
-        string cs1 = "Data Source=192.168.23.131,15433;Initial Catalog=newtrack;User ID=newtrack;Password=55hD&44m7E3jnd;Max Pool Size=32767;";
-        //string cs1 = "Data Source=103.108.12.184,15433;Initial Catalog=newtrack;User ID=newtrack;Password=55hD&44m7E3jnd;Max Pool Size=32767;";
-        //string cs = "Data Source =45.113.189.23; Initial Catalog = newtrack; User ID = newtrack; Password = 55hD&44m7E3jnd; pooling=false;timeout=3000";
-        //static int totalCounter = 0;
+        string cs1 = "Data Source={ip};Initial Catalog={catalog};User ID={user};Password={password};Max Pool Size=32767;";
+       
         private bool startThread = true;
+
+        // One-shot ETA policy.
+        // The Ola distance matrix is billed per element (origins x destinations), so re-pricing
+        // every pending stop every 2 minutes for the whole trip is what runs the bill up. Once
+        // startEngine() has confirmed the trip has really begun (fresh GPS, ignition on, bus more
+        // than 200 m away from school), we ask the API ONCE, turn each duration into an absolute
+        // arrival clock time, store it in bs_stop_master.eta, and from then on every cycle decides
+        // purely on the stored time. No further API calls for the rest of the trip.
+        private const int _maxEtaApiHits = 1;
+        private int _etaApiHits = 0;
         private string sender_id = "TSTSMS";
         private int service_from = 1;
         private string _Route_Name;
         private const int _etaUpdateTime = 60000;//it is 1 min and url will be hit after 1 min
-        //  string inputUrl = "https://maps.googleapis.com/maps/api/directions/xml?origin=saket&destination=connaught+place&mode=driving&alternatives=false&traffic_model=best_guess&departure_time=now&client=gme-nucleusmicrosystems&channel=track.georadius.in&sensor=true";
-        private string message_api = "http://smsby2.in/sendsms.php?username=atlanta&password=atlanta@123&sender=ATLNTA&mobile={0}&message={1}&route=T";
+        private string message_api = "";
         DateTime EngineStart;
         List<Stop> stops = new List<Stop>();
         Stop[] stopArray;
@@ -42,7 +47,7 @@ namespace PIS_Engine
         {
 
             _RouteId = Route_Id;
-           
+
             this._Route_Name = route_name;
             this._RouteId = Route_Id;
            //  _TripId = tripId;
@@ -50,9 +55,28 @@ namespace PIS_Engine
             this._UserID = user_id;
 
             Thread tUpdate = new Thread(new ThreadStart(() => this.DML("update bs_route_master set running=1 where id=" + this._RouteId)));
-           tUpdate.Start();  
-            Thread.Sleep(500);  
+           tUpdate.Start();
+            Thread.Sleep(500);
 
+            try
+            {
+                RunRoute(Route_Id, user_id, service_id, route_name, end_time);
+            }
+            catch (Exception ex)
+            {
+                General.WriteToLogFile(route_name, user_id, "Route aborted with unhandled error: " + ex.Message);
+            }
+            finally
+            {
+                // Whichever way we leave the route - clean stop, end time, crash - this thread has
+                // stopped tracking it. A running=1 left behind hides the route from the scheduler
+                // in Program.cs (it only selects running=0), so the route never starts again.
+                this.DML("update bs_route_master set running=0 where id=" + Route_Id);
+            }
+        }
+
+        private void RunRoute(int Route_Id, int user_id, int service_id, string route_name, TimeSpan end_time)
+        {
             General.WriteToLogFile(route_name, user_id, "Route Started");
 
             int retreivalCounter = 1;
@@ -473,6 +497,7 @@ namespace PIS_Engine
                                 {
                                     stop.MsgSend = false;
                                     stop.IsReached = false;
+                                    stop.EtaFetched = false;
                                     Thread tbs_stop_master = new Thread(new ThreadStart(() => this.DML("update bs_stop_master set is_arrived=0 where Id=" + stop.Id)));
                                     tbs_stop_master.Start();
                                     Thread.Sleep(500);
@@ -498,7 +523,7 @@ namespace PIS_Engine
             else
             {
                 Thread.Sleep(30 * 1000);
-                Predict(Route_Id, user_id, service_id, route_name, end_time);
+                RunRoute(Route_Id, user_id, service_id, route_name, end_time);
 
             }
         }
@@ -775,113 +800,234 @@ namespace PIS_Engine
         {
             this.startThread = false;
 
-            // **1️⃣ Collect all stop locations for the route**
-            List<string> destinations = new List<string>();
-            for (int i = 0; i < j; i++)
+            try
             {
-                destinations.Add(this.stopArray[i].GeoLocation.Latitude.ToString() + "," + this.stopArray[i].GeoLocation.Longitude.ToString());
-            }
-
-            // **2️⃣ Route-wise API call for all stops**
-            string etaResponse = GetEta_here(source, destinations, retreivalCounter);
-            List<int> etaList = JsonConvert.DeserializeObject<List<int>>(etaResponse); // Assuming JSON List Response
-
-            if (etaList.Count != j)
-            {
-                General.WriteToLogFile(route_name, user_id,
-                    $"Mismatch in ETA count and stop count. ETA Count: {etaList.Count}, Stop Count: {j}. Skipping update.");
-
-                this.startThread = true;
-                return;
-            }
-
-            // **3️⃣ Update each stop with the fetched ETA**
-            for (int i = 0; i < j; i++)
-            {
-                try
+                // ---- Phase 1: price the whole route, once per trip ----------------------------
+                // We only get here after startEngine() has already confirmed the trip conditions
+                // (fresh GPS, ignition on, bus further than 200 m from school), so this single call
+                // is made at the real start of the run.
+                if (_etaApiHits < _maxEtaApiHits)
                 {
-                    Stop stop = this.stopArray[i];
-                    if (stop.MsgSend == true && stop.IsReached == true)
-                        continue;
-
-                    stop.ETA_Default = etaList[i];
-
-                    // **Database update for ETA**
-                    Thread bs_stop_master = new Thread(new ThreadStart(() =>
-                        this.DML($"UPDATE bs_stop_master SET eta='{DateTime.Now.AddMinutes(stop.ETA_Default):HH:mm:ss}' WHERE Id={stop.Id}")));
-                    bs_stop_master.Start();
-                    Thread.Sleep(100);
-                    //Thread.Sleep(50);
-
-                    // **4️⃣ Send Notification only if ETA <= 10 minutes**
-                    bool hasVias = viaTable != null && viaTable.Rows.Count > 0;
-
-                    // **4️⃣ Send Notification only if ETA <= configured msg time**
-                    bool canSendNotificationForStop = hasVias
-                        ? stop.linkNo != 0
-                        : true;
-
-                    if (stop.eta_msg >= stop.ETA_Default &&
-                        stop.ETA_Default <= 10 &&
-                        canSendNotificationForStop)
+                    if (!FetchAndStoreArrivalTimes(source, j, retreivalCounter, route_name, user_id))
                     {
-                        if (!stop.MsgSend)
-                        {
-                            General gen = new General();
-
-                            string queryForUpcoming = $@"
-        UPDATE bs_stop_master SET status = 1 
-        WHERE sys_user_id = {user_id} AND route_id = {_RouteId} AND id = {stop.Id}";
-
-                            gen.DML(queryForUpcoming);
-
-                            List<Student> students = stop.Students;
-                            string PhnNoLists = "";
-                            StringBuilder student_ids = new StringBuilder();
-
-                            foreach (Student student in students)
-                            {
-                                PhnNoLists += student.PhnNO + ",";
-                                student_ids.Append(student.id.ToString() + ",");
-                            }
-
-                            string message = $"Dear parent, the bus for route {route_name} shall reach your stop within 10 min at {DateTime.Now.AddMinutes(10):HH:mm:ss}";
-
-                            Thread t2 = new Thread(new ThreadStart(() => SendNotification(All_Nos + PhnNoLists, message,_RouteId)));
-                            t2.Start();
-                            Thread.Sleep(300);
-
-                            General.update_stop_status(user_id, _RouteId, stop.Id);
-
-                            General.WriteToLogFile(
-                                route_name,
-                                user_id,
-                                hasVias
-                                    ? "Message sent to stop " + stop.StopName + " using VIA flow."
-                                    : "Message sent to stop " + stop.StopName + " using DIRECT fallback flow."
-                            );
-
-                            stop.MsgSend = true;
-                            stop.MsgSendAt = DateTime.Now.TimeOfDay;
-                        }
+                        // API unreachable or unusable. _etaApiHits is deliberately NOT incremented
+                        // so the next cycle retries - without a successful fetch no stop ever gets
+                        // an arrival time and no parent ever gets a message.
+                        return;
                     }
                 }
-                catch (Exception ex)
+
+                // ---- Phase 2: pure clock arithmetic, no API call ------------------------------
+                bool hasVias = viaTable != null && viaTable.Rows.Count > 0;
+
+                for (int i = 0; i < j; i++)
                 {
-                    General.WriteToLogFile(route_name, user_id, $"Error: {ex.Message}");
+                    try
+                    {
+                        Stop stop = this.stopArray[i];
+
+                        if (stop.MsgSend || !stop.EtaFetched)
+                            continue;
+
+                        // Same gate as before: on a VIA route a stop with no link_no cannot be
+                        // trusted to be ordered correctly, so it is not alerted.
+                        if (hasVias && stop.linkNo == 0)
+                            continue;
+
+                        // Existing behaviour was "eta <= eta_msg AND eta <= 10", i.e. the lower of
+                        // the two. Kept as is so schools that configured a smaller window keep it.
+                        int configured = stop.eta_msg > 0 ? stop.eta_msg : 10;
+                        int threshold = Math.Min(configured, 10);
+
+                        double minutesLeft = (stop.PredictedArrival - DateTime.Now).TotalMinutes;
+                        if (minutesLeft > threshold)
+                            continue;
+
+                        General gen = new General();
+
+                        string queryForUpcoming = $@"
+        UPDATE bs_stop_master SET status = 1
+        WHERE sys_user_id = {user_id} AND route_id = {_RouteId} AND id = {stop.Id}";
+
+                        gen.DML(queryForUpcoming);
+
+                        string PhnNoLists = "";
+                        if (stop.Students != null)
+                        {
+                            foreach (Student student in stop.Students)
+                                PhnNoLists += student.PhnNO + ",";
+                        }
+
+                        string message = $"Dear parent, the bus for route {route_name} shall reach your stop " +
+                                         $"within {threshold} min at {stop.PredictedArrival:HH:mm:ss}";
+
+                        Thread t2 = new Thread(new ThreadStart(() => SendNotification(All_Nos + PhnNoLists, message, _RouteId)));
+                        t2.Start();
+                        Thread.Sleep(300);
+
+                        General.update_stop_status(user_id, _RouteId, stop.Id);
+
+                        General.WriteToLogFile(
+                            route_name,
+                            user_id,
+                            "Message sent to stop " + stop.StopName +
+                            " from stored ETA " + stop.PredictedArrival.ToString("HH:mm:ss") +
+                            (hasVias ? " (VIA flow, no API call)." : " (DIRECT flow, no API call)."));
+
+                        stop.MsgSend = true;
+                        stop.MsgSendAt = DateTime.Now.TimeOfDay;
+                    }
+                    catch (Exception ex)
+                    {
+                        General.WriteToLogFile(route_name, user_id, $"Error: {ex.Message}");
+                    }
                 }
             }
-
-            this.startThread = true;
+            finally
+            {
+                this.startThread = true;
+            }
         }
 
 
+        /// <summary>
+        /// The single billed Ola distance-matrix call of the trip. Turns every pending stop's
+        /// duration into an absolute arrival time, keeps it on the Stop and writes it to
+        /// bs_stop_master.eta. Returns false when the call failed, so the caller can retry on the
+        /// next cycle without burning the one-shot budget.
+        /// </summary>
+        private bool FetchAndStoreArrivalTimes(string source, int j, int retreivalCounter,
+                                               string route_name, int user_id)
+        {
+            List<string> destinations = new List<string>();
+            List<int> pendingStops = new List<int>();
+
+            for (int i = 0; i < j; i++)
+            {
+                // A stop that is already notified or already reached costs matrix elements for
+                // nothing. (The old code used && here, which is why nothing was ever skipped.)
+                if (this.stopArray[i].MsgSend || this.stopArray[i].IsReached)
+                    continue;
+
+                pendingStops.Add(i);
+                destinations.Add(this.stopArray[i].GeoLocation.Latitude.ToString() + "," +
+                                 this.stopArray[i].GeoLocation.Longitude.ToString());
+            }
+
+            if (destinations.Count == 0)
+            {
+                // Nothing left to price - close the budget so we never call again this trip.
+                _etaApiHits = _maxEtaApiHits;
+                return true;
+            }
+
+            string etaResponse = GetEta_here(source, destinations, retreivalCounter);
+
+            if (etaResponse == null)
+            {
+                General.WriteToLogFile(route_name, user_id,
+                    "ETA API unavailable. Arrival times not stored yet, will retry next cycle.");
+                return false;
+            }
+
+            List<int> etaList = JsonConvert.DeserializeObject<List<int>>(etaResponse);
+
+            if (etaList == null || etaList.Count != destinations.Count)
+            {
+                General.WriteToLogFile(route_name, user_id,
+                    $"Mismatch in ETA count and requested stop count. ETA Count: {(etaList == null ? 0 : etaList.Count)}, Requested: {destinations.Count}, Stop Count: {j}. Will retry next cycle.");
+                return false;
+            }
+
+            // Anchor every arrival time to one instant so the stops stay consistent with each other.
+            DateTime predictedFrom = DateTime.Now;
+
+            for (int k = 0; k < pendingStops.Count; k++)
+            {
+                try
+                {
+                    Stop stop = this.stopArray[pendingStops[k]];
+
+                    stop.ETA_Default = etaList[k];
+                    stop.PredictedArrival = predictedFrom.AddMinutes(etaList[k]);
+                    stop.EtaFetched = true;
+
+                    // Locals, not the Stop object, so the background thread writes this stop's value.
+                    int stopId = stop.Id;
+                    string arrival = stop.PredictedArrival.ToString("HH:mm:ss");
+
+                    Thread bs_stop_master = new Thread(new ThreadStart(() =>
+                        this.DML($"UPDATE bs_stop_master SET eta='{arrival}' WHERE Id={stopId}")));
+                    bs_stop_master.Start();
+                    Thread.Sleep(100);
+                }
+                catch (Exception ex)
+                {
+                    General.WriteToLogFile(route_name, user_id, $"Error storing arrival time: {ex.Message}");
+                }
+            }
+
+            _etaApiHits++;
+
+            General.WriteToLogFile(route_name, user_id,
+                $"Arrival times stored for {pendingStops.Count} stops from a single API call. " +
+                $"API hits used this trip: {_etaApiHits}/{_maxEtaApiHits}.");
+
+            return true;
+        }
+
+
+        // A failing ETA API silently stops every arrival alert on every route, for every school.
+        // Alert on it, but throttled - a credit expiry fails every route at once and nobody needs
+        // one SMS per route per cycle.
+        private static readonly object _apiAlertLock = new object();
+        private static DateTime _lastApiFailureAlert = DateTime.MinValue;
+        private static int _apiFailuresSinceAlert = 0;
+        private const int _apiAlertIntervalMinutes = 30;
+        private const string _apiAlertMobile = "9540048853";
+
+        private static void ReportEtaApiFailure(string detail)
+        {
+            bool shouldAlert = false;
+            int failures = 0;
+
+            lock (_apiAlertLock)
+            {
+                _apiFailuresSinceAlert++;
+                if ((DateTime.Now - _lastApiFailureAlert).TotalMinutes >= _apiAlertIntervalMinutes)
+                {
+                    failures = _apiFailuresSinceAlert;
+                    _lastApiFailureAlert = DateTime.Now;
+                    _apiFailuresSinceAlert = 0;
+                    shouldAlert = true;
+                }
+            }
+
+            General.WriteToLogFile(detail, AppDomain.CurrentDomain.BaseDirectory, "eta_api_failure.txt");
+
+            if (shouldAlert)
+            {
+                // Keep the text free of URL reserved characters - SendMessage does not encode it.
+                SendMessage("PIS Engine alert. ETA API is failing so bus arrival messages are not " +
+                            "going out. Failures in the last " + _apiAlertIntervalMinutes +
+                            " minutes: " + failures + ". Please check the Ola Maps account credits " +
+                            "and API key.", _apiAlertMobile);
+            }
+        }
+
+        /// <summary>
+        /// Returns the per-stop ETAs as a JSON int array, or null when the ETA API could not be
+        /// reached. Null means "no data this cycle" and is distinct from a successful call that
+        /// returned an unexpected number of elements.
+        /// </summary>
         public string GetEta_here(string source, List<string> destinations, int counter)
         {
             try
             {
                 string destinationParam = string.Join("|", destinations); // Convert list to API format
-                string url = @"https://api.olamaps.io/routing/v1/distanceMatrix?origins={0}&destinations={1}&api_key=jFl3bgSWrcQGwgx1SDyepPS4sk2yAk8Cu9gj4hdz";
+                                                                          //string url = @"https://api.olamaps.io/routing/v1/distanceMatrix?origins={0}&destinations={1}&api_key=jFl3bgSWrcQGwgx1SDyepPS4sk2yAk8Cu9gj4hdz";
+
+                string url = @"https://api.olamaps.io/routing/v1/distanceMatrix?origins={0}&destinations={1}&api_key=vPUpQe6nr6OJm6j2JWjHz67JybeiTZ7d1Nd7ilDU";
 
                 string requesUri = string.Format(url, source, destinationParam);
                 // Insert into Database 
@@ -905,10 +1051,41 @@ namespace PIS_Engine
                     return JsonConvert.SerializeObject(etaList); // Return List<int> as JSON
                 }
             }
+            catch (WebException wex)
+            {
+                // The response body is where the real reason lives - an expired key answers
+                // 403 "account has been suspended due to insufficient credits".
+                string detail = "ETA API request failed: " + wex.Message;
+                try
+                {
+                    HttpWebResponse response = wex.Response as HttpWebResponse;
+                    if (response != null)
+                    {
+                        using (StreamReader rdr = new StreamReader(response.GetResponseStream()))
+                        {
+                            string body = rdr.ReadToEnd();
+                            if (body != null && body.Length > 300)
+                            {
+                                body = body.Substring(0, 300);
+                            }
+                            detail = "ETA API returned HTTP " + (int)response.StatusCode + ": " + body;
+                        }
+                    }
+                }
+                catch { }
+
+                detail = "Route " + _Route_Name + " (user " + _UserID + "): " + detail;
+                General.WriteToLogFile2(_Route_Name, _UserID, detail);
+                ReportEtaApiFailure(detail);
+                return null;
+            }
             catch (Exception ex)
             {
-                General.WriteToLogFile2(_Route_Name, _UserID, "Error in GetEta_here: " + ex.Message);
-                return "[]"; // Return empty list if error
+                string detail = "Route " + _Route_Name + " (user " + _UserID +
+                                "): Error in GetEta_here: " + ex.Message;
+                General.WriteToLogFile2(_Route_Name, _UserID, detail);
+                ReportEtaApiFailure(detail);
+                return null;
             }
         }
 

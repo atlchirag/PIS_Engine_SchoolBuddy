@@ -18,7 +18,6 @@ namespace PIS_Engine
 {
     class Program : ServiceBase
     {
-        //static string cs1 = "Data Source=45.113.189.23;Initial Catalog=newtrack;User ID=newtrack;Password=55hD&44m7E3jnd;";
 
 
         public static double GetDistanceBetweenPoints(double sourcelat, double sourcelng, double destlat, double destlng,double viaslat,double viaslng)
@@ -91,7 +90,7 @@ namespace PIS_Engine
 
         static void Main(string[] args)
         {
-           // ETAPredictor ee = new ETAPredictor();
+            ETAPredictor ee = new ETAPredictor();
 
             //ee.GetEta_here('28.55002,77.45936','' )
 
@@ -185,8 +184,37 @@ namespace PIS_Engine
             Thread.Sleep(500);
         }
 
+        /// <summary>
+        /// Routes are hidden from the scheduler while running=1. If the service was restarted or
+        /// a route thread died, that flag is never cleared and the route stops running for good.
+        /// A route that is genuinely being tracked logs an ETA lookup to bs_Api_test every couple
+        /// of minutes, so anything flagged with no lookup for 15 minutes has no live thread behind
+        /// it and can be released. Routes with a recent lookup are left alone - another instance
+        /// may be running them.
+        /// </summary>
+        private static void ClearStaleRunningFlags()
+        {
+            try
+            {
+                new General().DML(@"
+                    update bs_route_master set running = 0
+                    where running = 1
+                      and not exists (select 1 from bs_Api_test t
+                                      where t.route_id = bs_route_master.Id
+                                        and t.log_date > dateadd(minute, -15, getdate()))");
+                General.WriteToLogFile("PISService_Startup", 0, "Cleared stale running flags");
+            }
+            catch (Exception ex)
+            {
+                General.WriteToLogFile("PISService_Startup", 0,
+                    "Error while clearing stale running flags: " + ex.Message);
+            }
+        }
+
         private static void StartService()
         {
+            ClearStaleRunningFlags();
+
             while (true)
             {
                 DayOfWeek dayOfWeek = DateTime.Now.DayOfWeek;
@@ -194,7 +222,7 @@ namespace PIS_Engine
                 {
                     Thread.Sleep(7200000);
                     continue;
-                }
+                }                          
                 DataTable dataTable;
                 do
                 {

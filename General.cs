@@ -43,8 +43,8 @@ namespace PIS_Engine
         //// this is the main connection string 
 
         //public static readonly string connectionString = "Data Source=45.113.189.23;Initial Catalog=newtrack;User ID=newtrack;Password=55hD&44m7E3jnd; Max Pool Size=32767;";
-        public static readonly string connectionString = "Data Source=192.168.23.131,15433;Initial Catalog=newtrack;User ID=newtrack;Password=55hD&44m7E3jnd; Max Pool Size=32767;";
-        //public static readonly string connectionString = "Data Source=103.108.12.184,15433;Initial Catalog=newtrack;User ID=newtrack;Password=55hD&44m7E3jnd; Max Pool Size=32767;";
+        //public static readonly string connectionString = "Data Source=192.168.23.131,15433;Initial Catalog=atltracking;User ID=newtrack;Password=55hD&44m7E3jnd; Max Pool Size=32767;";
+        public static readonly string connectionString = "Data Source=103.108.12.184,15433;Initial Catalog=atltracking;User ID=newtrack;Password=55hD&44m7E3jnd; Max Pool Size=32767;";
 
         public static readonly string MySqlConnectionString = "Data Source=49.50.68.155;Initial Catalog=e_ticket;User ID=newtrack_test;Password=qwert@123; Maximum Pool Size=5000";
 
@@ -1183,7 +1183,8 @@ namespace PIS_Engine
             {
                 FirebaseApp.Create(new AppOptions()
                 {
-                    Credential = GoogleCredential.FromFile($"{pathToServiceAccountKey}\\schoolbuddy-4fc6d-firebase-adminsdk-xh2kk-f674f1807a.json"),
+                    //Credential = GoogleCredential.FromFile($"{pathToServiceAccountKey}\\schoolbuddy-4fc6d-firebase-adminsdk-xh2kk-f674f1807a.json"),
+                    Credential = GoogleCredential.FromFile($"{pathToServiceAccountKey}\\schoolbuddy-4fc6d-firebase-adminsdk-xh2kk-5fac47bd25.json"),
                 });
             }
         }

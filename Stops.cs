@@ -41,6 +41,12 @@ namespace PIS_Engine
         public int linkNo { get; set; }
         public TimeSpan MsgSendAt { get; set; }
         public bool RemMsgSend { get; set; }
+
+        // Absolute clock time the bus is predicted to reach this stop, fixed by the one and only
+        // distance-matrix call of the trip. Every later cycle compares this against DateTime.Now
+        // instead of asking the API again.
+        public DateTime PredictedArrival { get; set; }
+        public bool EtaFetched { get; set; }
       //  public string RFIf { get; set; }
     }
 }
