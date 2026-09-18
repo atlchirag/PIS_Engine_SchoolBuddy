@@ -1025,9 +1025,8 @@ namespace PIS_Engine
             try
             {
                 string destinationParam = string.Join("|", destinations); // Convert list to API format
-                                                                          //string url = @"https://api.olamaps.io/routing/v1/distanceMatrix?origins={0}&destinations={1}&api_key=jFl3bgSWrcQGwgx1SDyepPS4sk2yAk8Cu9gj4hdz";
 
-                string url = @"https://api.olamaps.io/routing/v1/distanceMatrix?origins={0}&destinations={1}&api_key=vPUpQe6nr6OJm6j2JWjHz67JybeiTZ7d1Nd7ilDU";
+                string url = @"https://api.olamaps.io/routing/v1/distanceMatrix?origins={0}&destinations={1}&api_key={key}";
 
                 string requesUri = string.Format(url, source, destinationParam);
                 // Insert into Database 
@@ -1090,58 +1089,7 @@ namespace PIS_Engine
         }
 
 
-        //public string GetEta_here(string source, string des, string vias, int counter)//string lat, string lng)
-        //{
-
-        //    try
-        //    {
-        //        string Msgs = $"\nSource : {source},\tDestination:{des},\tVias: {vias},\tCounter: {counter},\tRoute Id :{_RouteId},\tRoute_name:{_Route_Name},\tUserId:{_UserID}";
-        //        //string Msgsz = $"\nSource{source},Destination{des},Vias{vias},Counter{counter}, Route Id {_RouteId}, Route_name{_Route_Name}, UserId{_UserID}";
-        //        General.WriteToLogFile10(_Route_Name, _UserID, Msgs);
-
-        //        // string url = @"https://maps.googleapis.com/maps/api/directions/xml?key=AIzaSyCjdd0ctMsY1RQ40DfJRTXAigNR-Vu6Xlc&origin={0}&destination={1}&mode=driving&sensor=true&client=gme-nucleusmicrosystems&channel=fasttracksoft.us&alternatives=false&traffic_model=best_guess&departure_time=now&waypoints={2}";
-        //        // string url = @"https://maps.googleapis.com/maps/api/directions/xml?key=AIzaSyDubQNaptgYtEEw8rNJMp0WFteKHU_PTm8&origin={0}&destination={1}&mode=driving&sensor=true&traffic_model=best_guess&departure_time=now&waypoints={2}";
-        //        //string url = @"https://wse.ls.hereapi.com/2/findsequence.json?apiKey=w0o6WRp3JtOToGgN7sM7C6x5rDCti4AXEEBIELugXyk&start={0}&end={1}&{2}&improveFor=time&departure=now&mode=fastest;car;traffic:enabled;";
-        //        //string url = @"https://wse.ls.hereapi.com/2/findsequence.json?apiKey=Mcyek67Q58w0VfZciJNnfeY6f54zg5dewC7mhAVrqOI&start={0}&end={1}&{2}&improveFor=time&departure=now&mode=fastest;car;traffic:enabled;";
-        //        string url = @"https://api.olamaps.io/routing/v1/distanceMatrix?origins={0}&destinations={1}&api_key=jFl3bgSWrcQGwgx1SDyepPS4sk2yAk8Cu9gj4hdz";
-        //        //string inputKey = "AIzaSyCjdd0ctMsY1RQ40DfJRTXAigNR-Vu6Xlc&";
-        //        string Msg = $"\nSource : {source},\tDestination :{des},\tCounter:{counter}";
-
-        //        // General.WriteToLogFile(_route_name, _user_id, "");
-        //        //General.WriteToLogFile3(_Route_Name, _UserID, Msg);
-        //        //string requesUri = string.Format(url, source, des, vias);
-        //        string requesUri = string.Format(url, source, des);
-        //        General.WriteToLogFile1(_Route_Name, _UserID, Msg);
-        //        //  requesUri = GoogleSignedUrl.Sign(requesUri, inputKey);
-
-        //        // Insert into Database 
-        //        Thread tThread = new Thread(new ThreadStart(() => this.DML("insert into bs_Api_test values ('" + requesUri + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'," + counter + "," + _RouteId + ")")));
-        //        tThread.Start();
-        //        Thread.Sleep(30);
-        //        using (WebClient wc = new WebClient())
-        //        {
-        //            string downloaded_string = wc.DownloadString(requesUri);
-
-        //            hereTraffic traffic = JsonConvert.DeserializeObject<hereTraffic>(downloaded_string);
-        //            int time = traffic.rows[0].elements[0].duration;
-        //            time = time / 60;
-        //          //  int time = traffic.results[0].timeBreakdown.driving;
-        //            //Thread tThread = new Thread(new ThreadStart(() => this.DML("insert into bs_Api_test values ('" + requesUri + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'," + counter + "," + _RouteId + ")")));
-        //            //tThread.Start();
-        //            //Thread.Sleep(30);
-        //            // Console.WriteLine(time);
-        //            return time.ToString();
-        //        }
-
-        //    }
-
-        //    catch (Exception ex) {
-        //        string Msgs = $"\nSource : {source},\tDestination:{des},\tVias: {vias},\tCounter: {counter},\tRoute Id :{_RouteId},\tRoute_name:{_Route_Name},\tUserId:{_UserID}";
-        //        //string Msgsz = $"\nSource{source},Destination{des},Vias{vias},Counter{counter}, Route Id {_RouteId}, Route_name{_Route_Name}, UserId{_UserID}";
-        //        General.WriteToLogFile2(_Route_Name, _UserID, Msgs +"--------"+ ex.Message);
-        //            return null; }
-        //                        }
-
+        
         public double GetDistance(string slat, string slng, string elat, string elon)
         {
             var sCoord = new GeoCoordinate(Convert.ToDouble(slat), Convert.ToDouble(slng));
@@ -1175,137 +1123,6 @@ namespace PIS_Engine
 
 
 
-        //Edit by Tanya.................................because parents are getting large number of notifications.
-
-        //public void SendNotification(string mobiles, string msg)
-        //{
-        //    // EtaPredict p = new EtaPredict();
-        //    try
-        //    {
-
-        //        string[] mobileNOs = mobiles.Split(',');
-        //        string address = "https://fcm.googleapis.com/fcm/send";
-        //        DataTable dt = null;
-
-        //        for (int i = 0; i < mobileNOs.Length - 1; i++)
-        //        {
-        //            try
-        //            {
-        //                using (WebClient wc = new WebClient())
-        //                {
-        //                    wc.Headers.Add("Content-Type", "application/json");
-        //                    wc.Headers.Add("Authorization", "key=AAAAXlE6GGI:APA91bE77NMjJQ-2WhpzV3TVnqReCN1T54hqT0WCgk89_Qb-x4eQjb2qxTkg1c3hrOgWCEGyV-vzmcBKSzhSrfOksan86XaGY3sjqrx4MbnUW6iXjihKoF4TC5PZs5TUn02ya-8YSdRL");
-        //                    dt = SelectQuery("select auid,iuid from bs_user_master where bs_user_name='" + mobileNOs[i] + "'");
-        //                    if (dt.Rows.Count != 0)
-        //                    {
-        //                        // string uri = string.Format(address, msg, Convert.ToString(dt.Rows[0]["auid"]));
-
-        //                        //  string s = "{\"to\":\"cxqNbSPj4U8:APA91bH9o-5C3jfofETp665qMKiy4JkdbmKpVX_b8tJkJheG9PRNLCy_OfiGrzHXSeisk45Ze91HVtbxQAMNTCaz7-J-qWn4HiyOH3MjcJvNFOuHpMfExO1fSNmOTtlxWXoIOE06XiqK\",\"notification\": {\"body\": \"Hello mobile\"}}";
-        //                        //   request = WebRequest.Create(uri) as HttpWebRequest;
-        //                        if (!string.IsNullOrEmpty(dt.Rows[0]["auid"].ToString()))
-        //                        {
-        //                            string s = wc.UploadString(address, "{\"to\":\"" + dt.Rows[0]["auid"].ToString() + "\",\"notification\": {\"body\": \"" + msg + "\"}}");
-        //                            General.WriteToLogFile("result1", 000, s);
-        //                        }
-        //                        if (!string.IsNullOrEmpty(dt.Rows[0]["iuid"].ToString()))
-        //                        {
-        //                            string a = wc.UploadString(address, "{\"to\":\"" + dt.Rows[0]["iuid"].ToString() + "\",\"notification\": {\"body\": \"" + msg + "\"}}");
-        //                            General.WriteToLogFile("result2", 000, a);
-        //                        }
-        //                        Thread t = new Thread(new ThreadStart(() => this.DML("insert into bs_notification_parent(parent_id,message,date_time,Route_id) values ((select id from bs_user_master where bs_user_name='" + mobileNOs[i] + "') ,'" + msg + "',GETDATE()," + _RouteId + ")")));  //technical
-        //                        t.Start();
-        //                        //shubham
-        //                        Thread.Sleep(100);
-        //                    }
-        //                }
-        //            }
-
-        //            catch (Exception ex)
-        //            {
-
-        //                General.WriteToLogFile("Notification_Exp1", 000, ex.Message);
-
-        //                SendNotificationLatestApi(mobileNOs[i], msg);
-
-
-        //            }
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        General.WriteToLogFile("Notification_Exp2", 000, e.Message);
-        //        //SendNotificationLatestApi(mobiles, msg);
-        //    }
-        //}
-
-        //Edit by Gaurav Pandit.................................because parents are getting large number of notifications.
-
-        //public void SendNotification(string mobiles, string msg)
-        //{
-        //    try
-        //    {
-        //        string[] mobileNOs = mobiles.Split(',');
-        //        DataTable dt = null;
-        //        Firebase firebase = new Firebase();
-
-        //        for (int i = 0; i < mobileNOs.Length - 1; i++)
-        //        {
-        //            try
-        //            {
-        //                dt = SelectQuery($"SELECT auid, iuid FROM bs_user_master WHERE bs_user_name='{mobileNOs[i]}'");
-
-        //                if (dt.Rows.Count != 0)
-        //                {
-        //                    string auid = dt.Rows[0]["auid"].ToString();
-        //                    string iuid = dt.Rows[0]["iuid"].ToString();
-
-        //                    if (!string.IsNullOrEmpty(auid))
-        //                    {
-        //                        Task.Run(() => firebase.FirebaseNotifications(auid, msg, mobileNOs[i]));
-        //                        General.WriteToLogFile("Firebase Notification Sent to AUID", 000, auid);
-        //                    }
-
-        //                    if (!string.IsNullOrEmpty(iuid))
-        //                    {
-        //                        Task.Run(() => firebase.FirebaseNotifications(iuid, msg, mobileNOs[i]));
-        //                        General.WriteToLogFile("Firebase Notification Sent to IUID", 000, iuid);
-        //                    }
-
-        //                    //  Fetch student_id from bs_student_master_backup using mobile number
-        //                    string getStudentIdQuery = $"SELECT TOP 1 id FROM bs_student_master_backup WHERE mobile_no1 = '{mobileNOs[i]}'";
-        //                    object studentIdObj = General.ExecuteScalar(getStudentIdQuery);
-        //                    int studentId = studentIdObj != null ? Convert.ToInt32(studentIdObj) : 0;
-
-        //                    //Thread t = new Thread(new ThreadStart(() =>
-        //                    //    this.DML($"INSERT INTO bs_notification_parent(parent_id, message, date_time, Route_id) " +
-        //                    //             $"VALUES ((SELECT id FROM bs_user_master WHERE bs_user_name='{mobileNOs[i]}'), " +
-        //                    //             $"'{msg}', GETDATE(), {_RouteId})")
-        //                    //));
-
-        //                    //  Insert notification with student_id also
-        //                    Thread t = new Thread(new ThreadStart(() =>
-        //                        this.DML($"INSERT INTO bs_notification_parent(parent_id, message, date_time, Route_id, student_id) " +
-        //                                 $"VALUES ((SELECT id FROM bs_user_master WHERE bs_user_name='{mobileNOs[i]}'), " +
-        //                                 $"'{msg}', GETDATE(), {_RouteId}, {studentId})")
-        //                    ));
-
-        //                    t.Start();
-        //                    Thread.Sleep(100);
-        //                    //Thread.Sleep(50);
-        //                }
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                General.WriteToLogFile("Notification_Exp1", 000, ex.Message);
-        //                SendNotificationLatestApi(mobileNOs[i], msg);
-        //            }
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        General.WriteToLogFile("Notification_Exp2", 000, e.Message);
-        //    }
-        //}
 
         public void SendNotification(string mobiles, string msg, int route_id)
         {

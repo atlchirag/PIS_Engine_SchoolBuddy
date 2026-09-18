@@ -42,11 +42,8 @@ namespace PIS_Engine
     {
         //// this is the main connection string 
 
-        //public static readonly string connectionString = "Data Source=45.113.189.23;Initial Catalog=newtrack;User ID=newtrack;Password=55hD&44m7E3jnd; Max Pool Size=32767;";
-        //public static readonly string connectionString = "Data Source=192.168.23.131,15433;Initial Catalog=atltracking;User ID=newtrack;Password=55hD&44m7E3jnd; Max Pool Size=32767;";
-        public static readonly string connectionString = "Data Source=103.108.12.184,15433;Initial Catalog=atltracking;User ID=newtrack;Password=55hD&44m7E3jnd; Max Pool Size=32767;";
-
-        public static readonly string MySqlConnectionString = "Data Source=49.50.68.155;Initial Catalog=e_ticket;User ID=newtrack_test;Password=qwert@123; Maximum Pool Size=5000";
+            public static readonly string connectionString= "Data Source={ip};Initial Catalog={catalog};User ID={user};Password={password};Max Pool Size=32767;";
+         public static readonly string MySqlConnectionString= "Data Source={ip};Initial Catalog={catalog};User ID={user};Password={password};Max Pool Size=32767;";
 
         private static readonly string logFolderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Todays_Logs"); // Single folder
         private static readonly string logFilePath = Path.Combine(logFolderPath, "ApplicationLog.txt"); // Single file
